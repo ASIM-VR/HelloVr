@@ -15,6 +15,7 @@ namespace AsimVr.GUI
         private void Awake()
         {
             m_slider = GetComponent<Slider>();
+            m_slider.value = m_parameter.Value;
             m_slider.onValueChanged.AddListener(OnValueChanged);
         }
 

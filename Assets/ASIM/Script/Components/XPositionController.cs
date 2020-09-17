@@ -10,6 +10,7 @@ namespace AsimVr.Components
 
         private void Awake()
         {
+            OnValueChanged();
             m_parameter.AddListener(OnValueChanged);
         }
 
